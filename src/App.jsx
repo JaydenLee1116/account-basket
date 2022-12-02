@@ -1,7 +1,13 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import TotalPrice from './components/TotalPrice';
 const App = () => {
-  return <div>CRA 없이 세팅하기</div>;
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  return (
+    <>
+      <TotalPrice totalPrice={totalPrice} />
+    </>
+  );
 };
 
 export default App;
